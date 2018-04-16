@@ -1,0 +1,16 @@
+.buttons{
+    margin-top: 1em;
+}
+
+.container {
+
+  width : 1024px;
+  margin: auto;
+  background-color: dodgerblue;
+  padding : 1em;
+  font-family: arial;
+}
+
+.counter {
+  font-size: 3em;
+}
