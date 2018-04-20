@@ -6,16 +6,19 @@ document.addEventListener('DOMContentLoaded', function(){
   var catBtn = document.querySelector('.catBtn');
   var dogBtn = document.querySelector('.dogBtn');
 
-  var petWalkSurvey = PetWalkSurvey();
+  var catsSpottedCounter = 0;
+  var dogsSpottedCounter = 0;
+
+  //var petWalkSurvey = PetWalkSurvey();
 
   catBtn.addEventListener('click', function(){
-      petWalkSurvey.catSpotted();
-      catCounterElem.innerHTML = petWalkSurvey.catCount();
+    catsSpottedCounter++;
+    catCounterElem.innerHTML = catsSpottedCounter;
   });
 
   dogBtn.addEventListener('click', function(){
-    petWalkSurvey.dogSpotted();
-    dogCounterElem.innerHTML = petWalkSurvey.dogCount();
+    dogsSpottedCounter++;
+    dogCounterElem.innerHTML = dogsSpottedCounter;
   });
 
 });
