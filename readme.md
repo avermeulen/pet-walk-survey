@@ -16,7 +16,7 @@ The code that is getting the values from the screen elements and the logic that 
 
 ### Global variables
 
-There are some global variables `catsSpotted` and `dogsSpotted` that makes it hard if not impossible to write contained focussed Unit Tests that are independent of each other.
+There are some global variables `catsSpotted` and `dogsSpotted` that makes it hard if not impossible to write contained focussed Unit Tests that are not interfering with of each other.
 
 
 
