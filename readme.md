@@ -74,14 +74,27 @@ assert.equal(lindani.eaten(), 1);
 assert.equal(shannon.eaten(), 0);
 ```
 
-Things to note:
+Note:
 
 * Using the `AppleEater` factory function you can create different instances,
-* Each instance is independent from each other.
+* each instance is independent from each other having it own `applesEaten` variable.
 
 As a result the `AppleEater` is testable. 
 
 If you want to create a screen with a list of AppleEaters your DOM code only need to interact with the Factory Function that is already testable and contains all the application logic. The DOM codes role is only to gather and display data.
+
+## Using PetWalkSurvey testable
+
+To make the PetWalkSurvey screens logic testable we need to create a Factory Function that can do four things:
+
+* Record when a dog was walked
+* Record when a car was walked
+* Answer how many dogs was walked
+* Answer how many cats was walked
+
+Internally it have two variables and it exposes 4 functions.
+
+
 
 
 
