@@ -83,7 +83,7 @@ As a result the `AppleEater` is testable.
 
 If you want to create a screen with a list of AppleEaters your DOM code only need to interact with the Factory Function that is already testable and contains all the application logic. The DOM codes role is only to gather and display data.
 
-## Using PetWalkSurvey testable
+## Making PetWalkSurvey testable
 
 To make the PetWalkSurvey screens logic testable we need to create a Factory Function that can do four things:
 
@@ -93,6 +93,10 @@ To make the PetWalkSurvey screens logic testable we need to create a Factory Fun
 * Answer how many cats was walked
 
 Internally it have two variables and it exposes 4 functions.
+
+Start of by writing some Mocha unit tests - use TDD. The tests will initially fail as the Factory Function you are writing doesn't exist.
+
+
 
 
 
