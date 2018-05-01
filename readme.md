@@ -101,11 +101,58 @@ Start of by writing some Mocha unit tests - use TDD. The tests will initially fa
 Write tests for all the scenarios like:
 
 * if no dogs or cats were walked
+
+```javascript
+var petWalkSurvey = PetWalkSurvey();
+assert.equal(petWalkSurvey.dogCount(), 0);
+assert.equal(petWalkSurvey.catCount(), 0);
+```
+
 * if only a dog and no cat was walked
-* if only a cat and not dogs were walked
-* if a cat and a dog were walkd
+
+```javascript
+var petWalkSurvey = PetWalkSurvey();
+petWalkSurvey.catSpotted();
+assert.equal(petWalkSurvey.dogCount(), 0);
+assert.equal(petWalkSurvey.catCount(), 1);
+```
+
+* if only a cat and no dog was walked
+
+```javascript
+var petWalkSurvey = PetWalkSurvey();
+petWalkSurvey.dogSpotted();
+assert.equal(petWalkSurvey.dogCount(), 1);
+assert.equal(petWalkSurvey.catCount(), 2);
+```
+
+* if a cat and a dog were walked
+
+```javascript
+var petWalkSurvey = PetWalkSurvey();
+
+petWalkSurvey.dogSpotted();
+petWalkSurvey.catSpotted();
+
+assert.equal(petWalkSurvey.dogCount(), 1);
+assert.equal(petWalkSurvey.catCount(), 1);
+```
+
 * if many cats and dogs were walked.
 
+```javascript
+var petWalkSurvey = PetWalkSurvey();
+petWalkSurvey.dogSpotted();
+petWalkSurvey.catSpotted();
+petWalkSurvey.catSpotted();
+petWalkSurvey.dogSpotted();
+petWalkSurvey.dogSpotted();
+petWalkSurvey.catSpotted();
+petWalkSurvey.dogSpotted();
+petWalkSurvey.dogSpotted();
+assert.equal(petWalkSurvey.dogCount(), 5);
+assert.equal(petWalkSurvey.catCount(), 2);
+```
 Initially all these tests should fail.
 
 **Note:** Put your PetWalkSurvey Factory Functions code into a different JavaScript file than your DOM code. Otherwise you will get some undefined reference errors in the developer console even if your tests are passing.
