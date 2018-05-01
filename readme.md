@@ -106,6 +106,6 @@ Write tests for all the scenarios like:
 
 Initially all these tests should fail.
 
-**Note:** Put your PetWalkSurvey Factory Functions code into a different JavaScript file. Otherwise you will get some null pointers in the developer console even if your tests are passing.
+**Note:** Put your PetWalkSurvey Factory Functions code into a different JavaScript file than your DOM code. Otherwise you will get some undefined reference errors in the developer console even if your tests are passing.
 
 Once you are happy with the factory function - link it to your DOM code. Remember that DOM code should just gather and display ata. All data processing should happen in the Factory Function.
