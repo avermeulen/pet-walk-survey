@@ -88,7 +88,7 @@ If you want to create a screen with a list of AppleEaters your DOM code only nee
 To make the PetWalkSurvey screens logic testable we need to create a Factory Function that can do four things:
 
 * Record when a dog was walked
-* Record when a car was walked
+* Record when a cat was walked
 * Answer how many dogs was walked
 * Answer how many cats was walked
 
