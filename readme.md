@@ -2,7 +2,7 @@
 
 Learning Creating factory functions by spotting owners walking their Cats and Dogs.
 
-See the app [here](https://avermeulen.github.io/pet-walk-survey/)
+See the app in action here [here](https://avermeulen.github.io/pet-walk-survey/) - this one is not using Factory Functions.
 
 ## Making code testable
 
