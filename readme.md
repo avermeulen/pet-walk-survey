@@ -96,19 +96,16 @@ Internally it have two variables and it exposes 4 functions.
 
 Start of by writing some Mocha unit tests - use TDD. The tests will initially fail as the Factory Function you are writing doesn't exist.
 
+Write tests for all the scenarios like:
 
+* if no dogs or cats were walked
+* if only a dog and no cat was walked
+* if only a cat and not dogs were walked
+* if a cat and a dog were walkd
+* if many cats and dogs were walked.
 
+Initially all these tests should fail.
 
+**Note:** Put your PetWalkSurvey Factory Functions code into a different JavaScript file. Otherwise you will get some null pointers in the developer console even if your tests are passing.
 
-
-
-
-
-
-
-
-
-
-
-
-
+Once you are happy with the factory function - link it to your DOM code. Remember that DOM code should just gather and display ata. All data processing should happen in the Factory Function.
