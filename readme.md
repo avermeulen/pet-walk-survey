@@ -1,6 +1,8 @@
 # Pet walk survey
 
-Creating factory functions by spotting owners walking their Cats and Dogs.
+Learning Creating factory functions by spotting owners walking their Cats and Dogs.
+
+See the app [here](https://avermeulen.github.io/pet-walk-survey/)
 
 ## Making code testable
 
