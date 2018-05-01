@@ -1,6 +1,8 @@
 # Pet walk survey
 
-Creating factory functions by spotting owners walking their Cats and Dogs.
+Learning Creating factory functions by spotting owners walking their Cats and Dogs.
+
+See the app in action here [here](https://avermeulen.github.io/pet-walk-survey/) - this one is not using Factory Functions.
 
 ## Making code testable
 
@@ -88,7 +90,7 @@ If you want to create a screen with a list of AppleEaters your DOM code only nee
 To make the PetWalkSurvey screens logic testable we need to create a Factory Function that can do four things:
 
 * Record when a dog was walked
-* Record when a car was walked
+* Record when a cat was walked
 * Answer how many dogs was walked
 * Answer how many cats was walked
 
