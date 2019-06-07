@@ -2,12 +2,8 @@ function PetWalkSurvey(){
 
     var catsSpottedCounter = 0;
     var dogsSpottedCounter = 0;
-
-    function doStuff(){
-
-    }
+    
     function dogSpotted(){
-      doStuff();
       dogsSpottedCounter++;
     }
 
